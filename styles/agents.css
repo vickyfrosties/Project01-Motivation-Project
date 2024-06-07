@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tungsten;
+}
+
+body {
+  background-color: #060922;
+  /* display: flex; */
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(255, 70, 85);
+}
+
+main {
+  width: 100%;
+  height: 80%;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  width: 40%;
+  font-size: 45px;
+  color: white;
+
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav a:visited {
+  color: white;
+}
+
+.logo {
+  height: 60%;
+  width: 30%;
+  display: flex;
+  margin: 0;
+}
+
+.div_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+
+.background_agents_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  margin: 0;
+}
+
+.players {
+  margin-top: 3rem;
+  margin-left: 20%;
+  width: 60%;
+  border-color: white;
+  border-style: solid;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2.5rem;
+} 
+
+.agents_background {  
+  background-color: #ff4655cc;
+  margin: 0;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  gap: 5%;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.legend {
+  color: white;
+  font-size: 45px;
+  font-family: Tungsten;
+  text-align: center;
+  position: absolute;
+  writing-mode: vertical-rl;
+  margin: 10px;
+  
+}
+
+#Viper, #Phoenix, #Sage, #Raze, #Sova, #Gekko, #Omen, #Cypher, #Brimstone, #Jett, #Deadlock, #Reyna, #Breach, #Killjoy, #Skye, #Iso, #Yoru, #Astra, #KayO, #Chamber, #Neon, #Fade, #Harbor, #Clove {
+  width: 175px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-width: 0.5px;
+  border-color: white;
+  border-style: solid;
+  cursor: pointer;
+}
+
+#Sage, #Raze, #Sova, #Gekko, #Omen, #Cypher, #Deadlock, #Killjoy, #Skye, #Astra, #KayO, #Chamber {
+  object-position: 35% 50%;
+}
+
+#Viper, #Fade {
+  object-position: 45%;
+}
+
+#Iso, #Clove {
+   object-position: 65%;
+}
+
+.agents_background img:hover {
+  opacity: 0.85;
+}
+
+.popupcard {
+  margin-left: 6rem;
+  margin-top: 250px;
+  display: none;
+  position: absolute;
+  background-color: #E5E2DD;
+  width: 20%;
+  height: 40%;
+}
+
+#bug {
+  height: 20%;
+  position: absolute;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(15, 25, 35, 0.7);
+  animation-duration: 0.2s;
+}
+
+.agents_cards {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+#vid1 {
+  display: flex;
+  position: absolute;
+
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  rotate: -90deg;
+  border-width: 20px;
+  border-color: #ff4655cc;
+  border-style: solid;
+
+}
+
+#characterImg {
+  display: flex;
+  position: relative;
+  animation: infinite;
+  animation-name: float;
+  animation-duration: 7s;
+  animation-timing-function: ease;
+}
+
+
+.NAME  {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  position: absolute;
+  animation: infinite;
+  animation-name: float;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  color: #ECE8E1;
+  font-size: 235px;
+
+}
+
+
+@keyframes float {
+	0% {
+		transform: translate(0, 0px);
+	}
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+	100% {
+		transform: translate(0, 0px);
+	}
+}
+
+footer {
+  padding: 10px;
+    color: white;
+    width: 100%;
+    height: auto;
+    background-color: #FF4655;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+.RS {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RS svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #E5E2DD;
+}
+
+.RS p {
+  width: 10%;
+  color: white;
+  font-size: 15px;
+}
+
+.pegi {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
